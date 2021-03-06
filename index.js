@@ -34,5 +34,5 @@ const zipNumTestCheckFunc = (zipNum) => {
 }
 
 // 動作確認用
-const zip = zipNumTestCheckFunc(555,2330)
-console.log(zip)
+const zip2 = zipNumTestCheckFunc(555,2330)
+console.log(zip2)
