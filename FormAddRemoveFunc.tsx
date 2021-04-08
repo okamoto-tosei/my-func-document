@@ -7,17 +7,21 @@ function App() {
     { firstName: "", lastName: "" },
     { firstName: "", lastName: "" }
   ]);
+  
+  // 値の変更を監視する関数
   const handleChangeInput = (index, event) => {
     const inputArr = [...arr];
     inputArr[index][event.target.name] = event.target.value;
 
     setArr(inputArr);
   };
-
+  
+  // ボタン操作により、フォームを追加する関数
   const addFields = () => {
     setArr([...arr, { firstName: "", lastName: "" }]);
   };
-
+  
+  // ボタン操作によりフォームを削除する関数
   const removeFields = (index) => {
     const inputArr = [...arr];
     inputArr.splice(index, 1);
